@@ -9,7 +9,7 @@ It helps users:
 
 ---
 
-## 🚀 Features
+## Features
 
 - ✅ **Post Retrieval**: Uses FAISS and SentenceTransformers to retrieve top-performing historical LinkedIn posts by semantic similarity.
 - ✅ **AI-Powered Generation**: Generates multiple variations of new posts using OpenAI's GPT-4 and contextual examples.
@@ -23,25 +23,25 @@ It helps users:
 
 ---
 
-## 📊 Exploratory Analysis (EDA Highlights)
+## Exploratory Analysis (`FG_trend_analysis.ipynb`)
 
 The project performs in-depth analysis on scraped LinkedIn posts:
 
-- 📈 **Top Hashtags and keywords** by frequency
-- 📅 **Best Times to Post** (part_of_the_day)
-- 📝 **Post Length vs Engagement** (words vs engagement)
-- 📸 **Media Type Effect** (mostly images or videos)
+- **Top Hashtags and keywords** by frequency
+- **Best Times to Post** (part_of_the_day)
+- **Post Length vs Engagement** (words vs engagement)
+- **Media Type Effect** (mostly images or videos)
 
 ---
 
 ## Approach Used
 
-### 1. Scraping & Preprocessing
+### 1. Scraping & Preprocessing (`FG_task.ipynb`)
 - Scraped data from the provided linkedin profiles using apify's linkedin post scraper
 - Cleaned and preprocessed to remove noise
 - Engagement scores used to filter top-performing posts
 
-### 2. Embedding & Retrieval
+### 2. Embedding & Retrieval (`fgTask.py`)
 - `SentenceTransformer` embeddings stored in FAISS index
 - Real-time similarity search retrieves semantically similar posts based on the user entered topic
 
