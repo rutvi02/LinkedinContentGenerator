@@ -32,7 +32,7 @@ For Combining Scraped data (`Combining_scrapped_data.ipynb`) - stored in `all_us
 
 - Cleaned and preprocessed to remove noise
 - Calculated engagement scores for filtering top-performing posts
-- `df['engagement'] = df['likes'] +  df['support'] +  df['love'] +  df['insight'] +  df['celebrate'] + (2 * df['comments']) + (2* df['reposts']` - (Giving more importance to comments and reposts for engagement consideration)
+- `'engagement' = 'likes' + 'support' + 'love' + 'insight' + 'celebrate' + (2 * 'comments') + (2 * 'reposts') ` - (Giving more importance to comments and reposts for engagement consideration)
 - Extracted top 100 posts for further analysis based on the engagement score
 
 In-depth analysis on the top scraped LinkedIn posts:
@@ -55,11 +55,11 @@ The system uses Retrieval-Augmented Generation (RAG) to create high-quality, rel
 - It first retrieves top-performing historical posts similar to the user-entered topic using the FAISS index.
 - These examples are embedded directly into the prompt, serving as the base context for the language model (GPT-4).
 
-Trend analysis results (from EDA) — such as most used hashtags, optimal post length, and most used keywords — are incorporated into prompt construction to align with the expected length, and formatting with what has historically driven engagement.
+**Trend analysis results (from EDA)** — such as most used hashtags, optimal post length, and most used keywords — are incorporated into prompt construction to align with what has historically driven engagement.
 
 Two distinct system prompts guide for generating different variants:
--Brand-focused: Promotes the business value of Fuelgrowth, tailored for potential clients or partners.
--Founder-focused: Shares lessons, milestones, and experiences from the founder's journey.
+- Brand-focused: Promotes the business value of Fuelgrowth, tailored for potential clients or partners.
+- Founder-focused: Shares lessons, milestones, and experiences from the founder's journey.
 
 The result is a post that’s context-aware, trend-informed, and tailored to the audience’s expectations.
 
@@ -67,7 +67,7 @@ The result is a post that’s context-aware, trend-informed, and tailored to the
 ### 5. Feedback Loop
 - Users submit 👍/👎 and optional notes
 - Logs stored in `simple_feedback_log.csv`
-- Notes are analyzed to detect patterns (e.g., "too generic", "vague")
+- The stored responses are analyzed to detect patterns (e.g., "too generic", "vague")
 - Future prompts are dynamically enhanced based on feedback
 
 ---
