@@ -41,7 +41,7 @@ In-depth analysis on the top scraped LinkedIn posts:
 - **Post Length vs Engagement** (words vs engagement)
 - **Media Type Effect** (mostly images or videos)
 
-### 3. Embedding & Retrieval (`fgTask.py`)
+### 3. Embedding & Retrieval (`fgtask_embeddings.py`)
 - `SentenceTransformer` embeddings stored in FAISS index (`linkedin_post_index.faiss`) and text embeddings (`linkedin_top_texts.pkl`)
 - Real-time similarity search retrieves semantically similar posts based on the user entered topic
 
@@ -90,8 +90,7 @@ The result is a post that’s context-aware, trend-informed, and tailored to the
 .
 ├── app.py                      # Streamlit app entrypoint
 ├── .streamlit/secrets.toml     # OpenAI key (local only)
-├── requirements.txt
-├── feedback_log.csv            # Stores user feedback
+├── simple_feedback_log.csv            # Stores user feedback
 ├── linkedin_posts_index.faiss  # FAISS index of post embeddings
 ├── linkedin_top_texts.pkl      # Cleaned high-engagement texts
 └── .vscode/settings.json       # (optional) Interpreter config
