@@ -25,8 +25,8 @@ It helps users:
 ## Approach Used
 
 ### 1. Scraping & Preprocessing
-For Combining Scraped data (`Combining_scrapped_data.ipynb`) - stored in `all_users.csv`
 - Scraped data from the provided linkedin profiles using apify's linkedin post scraper
+- For Combining Scraped data (`Combining_scrapped_data.ipynb`) - stored in `all_users.csv`
 
 ### 2. EDA (`trend_analysis.ipynb`)
 
@@ -88,10 +88,19 @@ The result is a post that’s context-aware, trend-informed, and tailored to the
 
 ```
 .
-├── app.py                      # Streamlit app entrypoint
-├── .streamlit/secrets.toml     # OpenAI key (local only)
-├── simple_feedback_log.csv            # Stores user feedback
-├── linkedin_posts_index.faiss  # FAISS index of post embeddings
-├── linkedin_top_texts.pkl      # Cleaned high-engagement texts
-└── .vscode/settings.json       # (optional) Interpreter config
+├── AaronGoblin.json               # scrapped data
+├── ArchitAnand.json               # scrapped data
+├── Jaspar_Carmichael.json         # scrapped data
+├── RobertSchone.json              # scrapped data
+├── Combining_scrapped_data.ipynb  # combining all the scrapped data
+├── all_users.csv                  # combined user data
+├── top_posts.csv                  # top posts with high engagement
+├── trend_analysis.ipynb           # EDA for trend analysis
+├── variables_based_on_EDA.py      # stores popular hashtags and keywords based on EDA
+├── fgtask_embeddings.py           # for converting text to embeddings
+├── linkedin_posts_index.faiss     # FAISS index of post embeddings
+├── linkedin_top_texts.pkl         # Cleaned high-engagement texts
+├── custom_prompts.py              # for storing system prompts
+├── functions.py                   # defines necessary functions for retrival, generation and for feedback                     
+└── app.py                         # Streamlit app
 
