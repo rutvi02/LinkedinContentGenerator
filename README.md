@@ -101,6 +101,7 @@ The result is a post that’s context-aware, trend-informed, and tailored to the
 ├── linkedin_posts_index.faiss     # FAISS index of post embeddings
 ├── linkedin_top_texts.pkl         # Cleaned high-engagement texts
 ├── custom_prompts.py              # for storing system prompts
-├── functions.py                   # defines necessary functions for retrival, generation and for feedback                     
+├── functions.py                   # defines necessary functions for retrival, generation and for feedback
+├── simple_feedback_log.csv        # for storing user feedback                  
 └── app.py                         # Streamlit app
 
