@@ -85,6 +85,8 @@ The result is a post that’s context-aware, trend-informed, and tailored to the
 ---
 
 ## File Structure
+
+```
 .
 ├── app.py                      # Streamlit app entrypoint
 ├── .streamlit/secrets.toml     # OpenAI key (local only)
