@@ -73,6 +73,14 @@ The result is a post that’s context-aware, trend-informed, and tailored to the
 ---
 
 ## Sample Output
+**Initial UI**:
+<img width="1508" alt="Screenshot 2025-04-21 at 10 19 42 PM" src="https://github.com/user-attachments/assets/c66209ec-2748-44dd-be25-d641e895343d" />
+
+**Variation 1**:
+<img width="1280" alt="Screenshot 2025-04-21 at 10 21 13 PM" src="https://github.com/user-attachments/assets/1cce3a1b-2e56-4e50-9c76-81aed79a3f56" />
+
+**Variation 2**:
+<img width="1252" alt="Screenshot 2025-04-21 at 10 21 43 PM" src="https://github.com/user-attachments/assets/111618aa-95c3-4584-b6dd-74a143da09b6" />
 
 ---
 
