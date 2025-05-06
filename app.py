@@ -19,7 +19,7 @@ index = faiss.read_index("linkedin_posts_index.faiss")
 with open("linkedin_top_texts.pkl", "rb") as f:
     texts = pickle.load(f)
 
-embed_model = SentenceTransformer("all-MiniLM-L6-v2")
+embed_model = SentenceTransformer("all-MiniLM-L6-v2", device = 'cpu')
 
 
 # Loading feedback data
