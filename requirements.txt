@@ -3,4 +3,4 @@ sentence-transformers
 pandas
 numpy
 openai
-faiss
+faiss-cpu
